@@ -40,7 +40,7 @@ def makeWebhookResult(req):
 
     cost = {'sell':100, 'buy':200}
 
-    speech = "You succeed " + action_t + number+commodity+" at "+price+ date_per +"contract"+"with db code"+str(cost[action])
+    speech = "You succeed " + str(action_t) + str(number)+str(commodity)+"at"+str(price)+str(date_per) +"contract"+"with db code"+str(cost[action])
 
     print("Response:")
     print(speech)
