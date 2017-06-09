@@ -39,7 +39,8 @@ def makeWebhookResult(req):
     date_per=parameters.get("date-period")
 
     cost = {'sell':100, 'buy':200}
-    speech = "You succeed " + str(action_t) + str(number)+str(commodity[0])+"at"+str(price)+str(date_per[0]) +"contract"+"with db code"+str(cost[action_t])
+    speech=" ".join(["You succeed ", str(action_t),str(number),str(commodity[0]),"at",str(price),str(date_per[0]),"contract with db code",str(cost[action_t])
+    #speech = "You succeed " + str(action_t) + str(number)+str(commodity[0])+"at"+str(price)+str(date_per[0]) +"contract"+"with db code"+str(cost[action_t])
 
     print("Response:")
     print(speech)
