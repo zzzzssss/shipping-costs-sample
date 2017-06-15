@@ -65,7 +65,7 @@ def makeWebhookResult(req):
     return {
         "speech": speech,
         "displayText": speech,
-        "url": commodity_url[commodity[0]],
+        "data": commodity_url[commodity[0]],
         #"data": {},
         # "contextOut": [],
         "source": "apiai-testmistro"
