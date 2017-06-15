@@ -57,7 +57,7 @@ def makeWebhookResult(req):
                     'Zinc':'https://server.askmistro.com/picture?file=78U8ECHWG4UIRLC38PMJTPNLH5Y1AN3K.jpg&name=Token',
                     'Silver':'https://server.askmistro.com/picture?file=3HA86TAIDG1I4UQLIGXD7BWPDBQG99CQ.jpg&name=Token' 
                     }
-    speech = "Are you sure you want to " + str(action_t) +" "+str(number)+" "+str(commodity[0])+" at "+str(price)+" for "+str(date_per[0]) +" contract "+"with db code "+str(cost[action_t])
+    speech = "Are you sure you want to " + str(action_t) +" "+str(number)+" "+str(commodity[0])+" at $"+str(price)+" for "+str(date_per[0]) +" contract."
 
     print("Response:")
     print(speech)
